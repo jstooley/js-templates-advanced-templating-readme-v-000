@@ -7,7 +7,7 @@ Handlebars.registerHelper('comment_body', function() {
   }
 })
 
-function loadIssue() {
+function loadIssues() {
   var issue = {
     state: "closed",
     number: 5,
@@ -19,4 +19,3 @@ function loadIssue() {
   var result = template(issue);
   document.getElementsByTagName("main")[0].innerHTML += result;
 }
-
